@@ -15,7 +15,7 @@ if(answerNo === 'Y'|| answerNo === 'YES'){
   console.log(userName + ' now Knows you played Bass, in high school Q#1' )
   scoreTotal.push('q1');
   console.log('q1 pushed to Top score')
-} else if(answerNo === 'N' || answerNo === 'No'){
+} else if(answerNo === 'N' || answerNo === 'NO'){
    alert('He played bass, back in high school.');
    console.log(userName + ' Knows you suck at Bass. Q#1');
 } else {
@@ -56,7 +56,7 @@ if (answer3 === 'Y' || answer3 === 'YES'){
 //question4
 var answer4 = prompt(userName + ' Do you think Erik likes to code?').toUpperCase();
 if (answer4 === 'Y' || answer4 === 'YES'){
-   alert( 'Great! work! ' + userName);
+   alert( 'Great!.. work!! ' + userName + '!');
    console.log(userName + ' Said Yes to question #4')
    scoreTotal.push('q4');
    console.log('q4 pushed to total score');
@@ -71,16 +71,40 @@ if (answer4 === 'Y' || answer4 === 'YES'){
 //question5
 var answer5 = prompt(userName + ' Do you think Erik likes to play video games?').toUpperCase();
 if (answer5 === 'Y' || answer5 === 'YES'){
-  alert('Wrong! ' + userName);
-  console.log(userName + ' Said Yes to question #5')
-  alert('Just Kidding ' + userName + ', you got that one right!');
-  console.log('bad joke deployed..');
-  scoreTotal.push('q5');
-  console.log('q5 pushed to total score');
+    alert('Wrong! ' + userName);
+    console.log(userName + ' Said Yes to question #5')
+    alert('Just Kidding ' + userName + ', you got that one right!');
+    console.log('bad joke deployed..');
+    scoreTotal.push('q5');
+    console.log('q5 pushed to total score');
 } else if(answer5 === 'N'|| answer5 === 'NO') {
     alert('Sorry ' + userName + ', but you\'re wrong.');
     console.log(userName + ' picked No. Q#5');
 }
 
+//question 6
+alert('Okay ' + userName + ' you will have 4 trys to guess Erik\'s favorit number.');
+var i = 0;
+var favNum = 8;
+while(i < 4){
+var answer6 = parseInt(prompt('What\'s Erik\'s favorit number? *hint its between 1 and 20'));
+    if(answer6 === favNum){
+      alert(userName +' you guessed too correct!');
+      console.log('q6 done');
+      scoreTotal.push('q6');
+      break;
+
+      // atmp--;
+    } else if(answer6 > favNum){
+        alert('Too high');
+        console.log('Too high');
+        i++;
+        // atmp--;
+    } else if(answer6 < favNum){
+      alert('Too Low!');
+      console.log(userName + 'guessed your favorit number');
+      i++;
+    }
+}
 //Total score
-alert(userName + ' thank\s for playing. you\'re  Total score is ' + scoreTotal.length + ' out of 7');
+alert(userName + ' thank\s for playing. Your  Total score is ' + scoreTotal.length + ' out of 7');

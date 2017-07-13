@@ -121,7 +121,7 @@ var answer7 = prompt('What\'s Erik\'s favorit fruit?').toUpperCase();
   if( x > 0 ){
     x--;
     alert('Sorry try agian [' + x + ']try\'s left');
-  } 
+  }
 }
 
 

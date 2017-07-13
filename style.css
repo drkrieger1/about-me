@@ -5,3 +5,18 @@ img {
 body {
   Background-color: gray;
 }
+h2.one{
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  border-radius: 25px;
+  font-family: monospace;
+  width: 85%;
+  padding: 10px;
+  border: 5px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}

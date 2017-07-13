@@ -94,8 +94,7 @@ var answer6 = parseInt(prompt('What\'s Erik\'s favorit number? *hint its between
       scoreTotal.push('q6');
       break;
 
-      // atmp--;
-    } else if(answer6 > favNum){
+ } else if(answer6 > favNum){
         alert('Too high');
         console.log('Too high');
         i++;
@@ -106,5 +105,25 @@ var answer6 = parseInt(prompt('What\'s Erik\'s favorit number? *hint its between
       i++;
     }
 }
+//Question7
+var x = 6;
+var fruit = ['ORANGE', 'PEAR', 'TOMATO'];
+while( x > 0){
+var answer7 = prompt('What\'s Erik\'s favorit fruit?').toUpperCase();
+    for(var i = 0; i < fruit.length; i++){
+      if(answer7 === fruit[i]){
+      alert(answer7 + ' is correct!!');
+      scoreTotal.push('Q7');
+      x = -2;
+      break;
+    }
+  }
+  if( x > 0 ){
+    x--;
+    alert('Sorry try agian [' + x + ']try\'s left');
+  } 
+}
+
+
 //Total score
-alert(userName + ' thank\s for playing. Your  Total score is ' + scoreTotal.length + ' out of 7');
+ alert(userName + ' thank\s for playing. Your  Total score is ' + scoreTotal.length + ' out of 7');

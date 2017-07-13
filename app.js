@@ -120,7 +120,11 @@ var answer7 = prompt('What\'s Erik\'s favorit fruit?').toUpperCase();
   }
   if( x > 0 ){
     x--;
-    alert('Sorry try agian [' + x + ']try\'s left');
+    alert('Wrong! ' + x + ' try\'s left');
+  }
+  if ( x === 0 ) {
+    alert('Sorry you have ' + x + ' Left');
+    console.log(usreName + ' failed to guess Q7');
   }
 }
 

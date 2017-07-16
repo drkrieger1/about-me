@@ -1,22 +1,62 @@
-img {
-  width: 25%;
+* {
+	font-family: cursive;
 }
 
-body {
-  Background-color: gray;
+body  {
+  max-width: 960px;
+  margin: 0 auto;
+  background-image:url(backgroun1.jpg);
 }
-h2.one{
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
+#header {
+  height: 400px;
+  text-align: center;
+	color: black;
 }
-
-p {
-  border-radius: 25px;
-  font-family: monospace;
-  width: 85%;
-  padding: 10px;
-  border: 5px solid white;
-  margin-left: auto;
-  margin-right: auto;
+.about {
+  max-width: 200px;
+  max-height: : 200px;
+  float: right;
+  margin: 2px;
+	color:#e6dcc9;
+}
+.allh2 {
+	font-family: 'Rock Salt', cursive;
+	color: #ffae3e;
+	font-size: 20px;
+}
+.bio {
+ color:#e6dcc9;
+ width: 350px;
+ height: 250px;
+ padding: 10px;
+}
+.bio {
+  float: right;
+}
+#education {
+  margin: 2px;
+	padding:5px;
+  float: right;
+	color:#e6dcc9;
+}
+.jobexp {
+ max-width: 200px;
+ max-height: 200px;
+ margin: 2px;
+ float: right;
+ color:#e6dcc9;
+}
+.favmovie {
+	color:#e6dcc9;
+	max-width: 100px
+}
+#footer {
+	width: 100px
+	height:50px;
+	text-align: center;
+	float: left;
+	margin-top: 10px;
+}
+#footcol {
+	color: #480621;
 }
